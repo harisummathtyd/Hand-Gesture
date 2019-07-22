@@ -12,7 +12,7 @@ while(True):
     roi=frame[100:350, 100:350]
     cv2.rectangle(frame,(100,100),(350,350),(0,255,0),2) 
 
-    image_name="dataset\\medium\\"+ str(image_count) +".jpg"
+    image_name="dataset\\negative\\"+ str(image_count) +".jpg"
 
     cv2.imwrite(image_name,roi)
     image_count+=1
